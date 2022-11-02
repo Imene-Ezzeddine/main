@@ -1,20 +1,20 @@
 ##reading text files
 library(data.table)
-features <- read.table("C:/Users/dell/Desktop/tyding data/UCI HAR Dataset/features.txt"
+features <- read.table("https://github.com/Imene-Ezzeddine/main/blob/main/UCI HAR Dataset/features.txt"
                        , header = FALSE, sep = "")[,2]
-activities <- read.table("C:/Users/dell/Desktop/tyding data/UCI HAR Dataset/activity_labels.txt"
+activities <- read.table("https://github.com/Imene-Ezzeddine/main/blob/main/UCI HAR Dataset/activity_labels.txt"
                          , header = FALSE, sep = "")[,2]
-subject_test <- read.table("C:/Users/dell/Desktop/tyding data/UCI HAR Dataset/test/subject_test.txt",
+subject_test <- read.table("https://github.com/Imene-Ezzeddine/main/blob/main/UCI HAR Dataset/test/subject_test.txt",
                            header = FALSE, sep = "")
-feature_test <- read.table("C:/Users/dell/Desktop/tyding data/UCI HAR Dataset/test/X_test.txt",
+feature_test <- read.table("https://github.com/Imene-Ezzeddine/main/blob/main/UCI HAR Dataset/test/X_test.txt",
                            header = FALSE, sep = "")
-activity_test <- read.table("C:/Users/dell/Desktop/tyding data/UCI HAR Dataset/test/y_test.txt",
+activity_test <- read.table("https://github.com/Imene-Ezzeddine/main/blob/main/UCI HAR Dataset/test/y_test.txt",
                            header = FALSE, sep = "")
-subject_train <- read.table("C:/Users/dell/Desktop/tyding data/UCI HAR Dataset/train/subject_train.txt",
+subject_train <- read.table("https://github.com/Imene-Ezzeddine/main/blob/main//UCI HAR Dataset/train/subject_train.txt",
                            header = FALSE, sep = "")
-feature_train <- read.table("C:/Users/dell/Desktop/tyding data/UCI HAR Dataset/train/X_train.txt",
+feature_train <- read.table("https://github.com/Imene-Ezzeddine/main/blob/main//UCI HAR Dataset/train/X_train.txt",
                            header = FALSE, sep = "")
-activity_train <- read.table("C:/Users/dell/Desktop/tyding data/UCI HAR Dataset/train/y_train.txt",
+activity_train <- read.table("https://github.com/Imene-Ezzeddine/main/blob/main//UCI HAR Dataset/train/y_train.txt",
                             header = FALSE, sep = "")
 ##binding files into a subject/feature/activity table frame
 library(dplyr)
